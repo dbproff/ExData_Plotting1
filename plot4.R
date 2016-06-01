@@ -39,7 +39,7 @@ with(hpc, {
            ylab="Voltage (volt)", xlab="")
       # 3rd plot
       plot(Sub_metering_1~timestamp, type="l", 
-           ylab="Global Active Power (kilowatts)", xlab="")
+           ylab="Energy Submetering", xlab="")
       lines(Sub_metering_2~timestamp,col='Red')
       lines(Sub_metering_3~timestamp,col='Blue')
       legend("topright", col=c("black", "red", "blue"), lty=1, lwd=2, bty="n",
@@ -47,7 +47,7 @@ with(hpc, {
              ,  cex=0.5)
       # 4th plot
       plot(Global_reactive_power~timestamp, type="l", 
-           ylab="Global Rective Power (kilowatts)",xlab="")
+           ylab="Global_reactive_power",xlab="")
 })
 
 ## Saving to file
